@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<body>
+
+<div class="w3-container w3-orange">
+  <h1>Matt's Weather App</h1> 
+  <p>A look at weather history!</p> 
+</div>
+
+<div class="w3-row-padding">
+
+<div class="w3-third">
+  <title>Weather History</title>
+  <h2>Search</h2>
+  <p>Search local weather archives for a day in history!</p>
+  
+
+
+<div class="w3-third">
+                  <form id="trip" method="get" action="http://www.wunderground.com/cgi-bin/findweather/getForecast">
+                    <font color="#FFFFFF" size="3" face="Arial">
+                    <input type="hidden" value="query" name="airportorwmo">
+                    <input type="hidden" value="DailyHistory" name="historytype">
+                    <input type="hidden" value="/history/index.html" name="backurl">
+                    </font>
+                    <table cellSpacing="0" cellPadding="5" width="442">
+                      <tr>
+                        <td class="b" align="right">
+                        <font face="Arial" size="2">Location:</font></td>
+                        <td width="339"><font face="Arial">
+                        <font color="#CC6600" size="3">
+                        <input maxLength="300" size="38" name="code"></font>
+                        </font>
+                        <div class="sm">
+                          <font face="Arial" size="2">City, 
+                          State, ZIP Code, or 
+                          Airport Code</font></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="b" align="right">
+                        <font face="Arial" size="2">Date:</font></td>
+                        <td width="339">
+                        <table cellSpacing="0" cellPadding="0" border="0">
+                          <tr>
+                            <td bgColor="#ffffff">
+                            <font color="#CC6600" size="3" face="Arial">
+                            <select name="month">
+                            <option value="1" selected>
+                            January</option>
+                            <option value="2">
+                            February</option>
+                            <option value="3">March
+                            </option>
+                            <option value="4">April
+                            </option>
+                            <option value="5">May
+                            </option>
+                            <option value="6">June
+                            </option>
+                            <option value="7">July
+                            </option>
+                            <option value="8">August
+                            </option>
+                            <option value="9">
+                            September</option>
+                            <option value="10">
+                            October</option>
+                            <option value="11">
+                            November</option>
+                            <option value="12">
+                            December</option>
+                            </select></font></td>
+                            <td bgColor="#ffffff">
+                            <font color="#CC6600" size="3" face="Arial">
+                            <select name="day" size="1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29
+                            </option>
+                            <option>30</option>
+                            <option>31</option>
+                            </select></font></td>
+                            <td bgColor="#ffffff">
+                            <font color="#CC6600" size="3" face="Arial">
+                            <select name="year" size="1">
+                            <option>2015</option>
+                            <option>2014</option>
+                            <option>2013</option>
+                            <option>2012</option>
+                            <option>2011
+                            </option>
+                            <option>2010
+                            </option>
+                            <option>2009
+                            </option>
+                            <option>2008</option>
+                            <option>2007</option>
+                            <option>2006</option>
+                            <option>2005</option>
+                            <option>2004</option>
+                            <option>2003</option>
+                            <option>2002</option>
+                            <option>2001</option>
+                            <option>2000</option>
+                            <option>1999</option>
+                            <option>1998</option>
+                            <option>1997</option>
+                            <option>1996</option>
+                            <option>1995</option>
+                            <option>1994</option>
+                            <option>1993</option>
+                            <option>1992</option>
+                            <option>1991</option>
+                            <option>1990</option>
+                            <option>1989</option>
+                            <option>1988</option>
+                            <option>1987</option>
+                            <option>1986</option>
+                            <option>1985</option>
+                            <option>1984</option>
+                            <option>1983</option>
+                            <option>1982</option>
+                            <option>1981</option>
+                            <option>1980</option>
+                            <option>1979</option>
+                            <option>1978</option>
+                            <option>1977</option>
+                            <option>1976</option>
+                            <option>1975</option>
+                            <option>1974</option>
+                            <option>1973</option>
+                            <option>1972</option>
+                            <option>1971</option>
+                            <option>1970</option>
+                            <option>1969</option>
+                            <option>1968</option>
+                            <option>1967</option>
+                            <option>1966</option>
+                            <option>1965</option>
+                            <option>1964</option>
+                            <option>1963</option>
+                            <option>1962</option>
+                            <option>1961</option>
+                            <option>1960</option>
+                            <option>1959</option>
+                            <option>1958</option>
+                            <option>1957</option>
+                            <option>1956</option>
+                            <option>1955</option>
+                            <option>1954</option>
+                            <option>1953</option>
+                            <option>1952</option>
+                            <option>1951</option>
+                            <option>1950</option>
+                            <option>1949</option>
+                            <option>1948</option>
+                            <option>1947</option>
+                            <option>1946</option>
+                            <option>1945</option>
+                            </select></font></td>
+                          </tr>
+                        </table>
+                        </td>
+                      </tr>
+                    </div>
+                      <tr>
+                        <td align="right">
+                        <font face="Arial" color="#000000" size="2">&nbsp;</font></td>
+                        <td width="339">
+                        <p align="justify">
+                        <font color="black" size="3" face="Arial">
+                        <input type="submit" value="Submit"></font></td>
+                      </tr>
+                    </table>
+                  </form>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          </td>
+        </tr>
+      </table>
+        </td>
+            </tr>
+            <div class="w3-third">
+  <h2>Another Section</h2>
+  <p>Paris is the capital of France.</p> 
+  <p>This will be another section of some sort.</p>
+</div>
+<div class="w3-third">
+  <h2>Another Section</h2>
+  <p>Tokyo is the capital of Japan.</p>
+  <p>This will be another section of some sort.</p>
+</div>
+
+            
+              
+
+
+
+  
+  </body>
+
+
+</div>
+</html>
